@@ -11,28 +11,61 @@
 <body>
     <div>
         <h1 class="top"> Git e GitHub</h1>
-        <h2>Configurações básicas</h2>
-        
+                
         <p>Após ter instalado o Git no seu computador, abra o prompt de comando e digite <code>git --version</code> para verificar a versão do Git instalada.</p>
         <img src="../projetos/imagens/git_version.png" alt="">
         
         <P>Se a instalação do Git estiver correta irá aparecer uma tela parecida com a imagem acima.</P>
-        <h2>Inserindo nome de usuário </h2>
+        <h2>Configurações básicas</h2>
+
         <p>Digite o comando <code>git config --global user.name 'nome do usuário'</code>.</p>
         <p>Após configurado seu nome, digite o comando <code>git config --global user.name</code> para mostrar seu nome de usuário.</p>
         <img src="../projetos/imagens/git_global_user_name.png" alt="">
         
+        <p>Agora digite o comando <code>git config --global user.email 'informe seu email'.</code> Para verificar seu email digite <code>git config --global user.email.</code> </p>
+        <img src="../projetos/imagens/git_global_user_email.png" alt=""> 
+            
         <h2>GitHub</h2>
         
         <p>Crie uma conta no GitHub e depois crie um repositório para salvar seu projeto na nuvem. </p>
         <p>Após seu projeto ser criado no GitHub você deve vincular este no seu computador.</p>
         <P>Crie uma pasta no seu computador para salvar seu projeto local.</P>
-        <p>Dentro da pasta que vocÊ criou, clique com botão direito do mouse e selecione <strong>Git Bash Here</strong>.</p>
+        <p>Dentro da pasta que você criou, clique com botão direito do mouse e selecione <strong>Git Bash Here</strong>.</p>
         <p>Agora na janela do terminal que abriu digite <code>git init</code>.</p>
         <p><code>git init</code>- este comando faz com que seu projeto seja monitorado pelo Git, a partir de agora qualquer alteração feita nesta pasta poderá ser restaurada a qualquer momento.</p>
-        <p>Agora digite<code> git remote add origin'endereço do seu projeto'</code> para vincular seu repositório GitGub a pasta local, que você criou para salvar seu projeto.</p>
+        <p>Agora digite<code> git remote add origin'endereço do seu projeto'</code> para vincular seu repositório GitHub à pasta local, que você criou para salvar seu projeto.</p>
         <p>O comando acima está disponível no GitHub, após seu projeto ser criado.</p>
         <p>Feito isto, você poderá fazer alterações local e enviar para o GitHub e acessar seu projeto de qualquer computador.</p>
+        
+        <h2>Commit</h2>
+        <p>Quando é feita alguma alteração no projeto é usado o comando <code>git commit 'mensagem'</code> para identificar as alterações feitas, e caso algo dê errado, é possível voltar ao estado anterior. Portanto é recomendado que a cada alteração relevante seja feito um <code>commit.</code></p>
+
+        <h2>Push</h2>
+
+        <p>Para enviar a versão atual do seu projeto para GitHub use o comando <code>git push origin master</code></p>
+
+        <h2>Resumo</h2>
+        <p>Até agora aprendemos a fazer as Configurações básicas do Git, também aprendemos a iniciar o versionamento de um projeto, fazer commit e enviar nosso projeto para o GitHub </p>
+
+
+        <h2>Pull</h2>
+        <p>Para atualizar os arquivos locais do seu projeto usamos o comando <code>git pull origin master.</code> Este comando é útil quando temos outras pessoas colaborando com nosso projeto ou quando fazemos mudanças de forma remota no nosso projeto.</p>
+
+        <h2>Diff</h2>
+        <p>Este comando mostra a diferença entre os arquivos após alguma alteração</p>
+
+        <img src="../projetos/imagens/git_diff.png" alt="">
+
+        <h2>log</h2>
+
+        <p>Este comando mostra os últimos commit e quem fez as alterações.Note que cada commit tem um <code>hash</code> identificação. </p>
+
+        <h2>Git show</h2>
+
+        <p>A identificação <code>hash</code> é utilizada para mostrar tudo o que foi feito naquele commit. Use o comando <code>git show + hash.</code></p>
+
+        <h2>Git reset</h2>
+        <p>Se por algum motivo seja necessário desfazer alguma alteração no seu projeto, isso é possível utilizando o comando <code>git reset + hash</code> do commit que deseja descartar.</p>
         <a href="#top">Topo</a>
     </div>
 </body>
