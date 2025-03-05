@@ -1,4 +1,5 @@
-Aqui está a solução dos exercicios em forma de fluxograma para praticar o raciocinio lógico para resolver os problemas em etapas 
+Este documento contém soluções dos exercícios em forma de fluxogramas para praticar o raciocínio lógico e resolver problemas de maneira estruturada. Cada exercício é detalhado com passos claros para facilitar a compreensão e a implementação.
+
 ### Exercício 1: Hello, World!
 **Passos:**
 1. Iniciar
