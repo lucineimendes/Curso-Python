@@ -19,22 +19,22 @@ Você pode visualizar os fluxogramas diretamente em um editor que suporte Mermai
 
 ### 2. Passo a Passo
 1. Iniciar o programa.  
-2. Exibir a mensagem "Hello, World!".  
+2. Exibir a mensagem 'Hello, World!'.  
 3. Encerrar o programa.
 
 ### 3. Fluxograma (Mermaid)
 ```mermaid
 graph TD
-  A[Início] --> B[Exibir "Hello, World!"]
+  A[Início] --> B[Exibir 'Hello, World!']
   B --> C[Fim]
 ```
 
 ### 4. Código Python
 ```python
 # Exercício 1: Hello, World!
-# Exibe a mensagem "Hello, World!" na tela
+# Exibe a mensagem 'Hello, World!' na tela
 
-print("Hello, World!")  # Imprime a mensagem na saída padrão
+print('Hello, World!')  # Imprime a mensagem na saída padrão
 ```
 
 ### 5. Exemplo de Saída
@@ -59,9 +59,9 @@ Hello, World!
 ### 3. Fluxograma (Mermaid)
 ```mermaid
 graph TD
-  A[Início] --> B[Pedir "Digite seu nome:"]
+  A[Início] --> B[Pedir 'Digite seu nome:']
   B --> C[Ler o nome e armazenar]
-  C --> D[Exibir "Olá, {nome}!"]
+  C --> D[Exibir 'Olá, {nome}!']
   D --> E[Fim]
 ```
 
@@ -70,8 +70,8 @@ graph TD
 # Exercício 2: Entrada de Usuário
 # Lê o nome do usuário e exibe uma saudação personalizada
 
-nome = input("Digite seu nome: ")  # Recebe o nome do usuário
-print(f"Olá, {nome}!")            # Exibe a saudação com o nome informado
+nome = input('Digite seu nome: ')  # Recebe o nome do usuário
+print(f'Olá, {nome}!')            # Exibe a saudação com o nome informado
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -117,25 +117,25 @@ graph TD
 # Exercício 3: Calculadora Simples
 # Realiza operações básicas com dois números, com base no operador informado
 
-num1 = float(input("Digite o primeiro número: "))  # Lê o primeiro número
-num2 = float(input("Digite o segundo número: "))   # Lê o segundo número
-operacao = input("Digite a operação (+, -, *, /): ")  # Lê o operador desejado
+num1 = float(input('Digite o primeiro número: '))  # Lê o primeiro número
+num2 = float(input('Digite o segundo número: '))   # Lê o segundo número
+operacao = input('Digite a operação (+, -, *, /): ')  # Lê o operador desejado
 
-if operacao == "+":
+if operacao == '+':
     resultado = num1 + num2  # Soma
-elif operacao == "-":
+elif operacao == '-':
     resultado = num1 - num2  # Subtração
-elif operacao == "*":
+elif operacao == '*':
     resultado = num1 * num2  # Multiplicação
-elif operacao == "/":
+elif operacao == '/':
     if num2 != 0:
         resultado = num1 / num2  # Divisão segura
     else:
-        resultado = "Erro: Divisão por zero"
+        resultado = 'Erro: Divisão por zero'
 else:
-    resultado = "Operação inválida"
+    resultado = 'Operação inválida'
 
-print(f"O resultado é: {resultado}")  # Exibe o resultado
+print(f'O resultado é: {resultado}')  # Exibe o resultado
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -174,11 +174,11 @@ graph TD
 # Exercício 4: Área do Retângulo
 # Calcula a área de um retângulo com base na largura e altura informadas
 
-largura = float(input("Digite a largura do retângulo: "))  # Lê a largura
-altura = float(input("Digite a altura do retângulo: "))      # Lê a altura
+largura = float(input('Digite a largura do retângulo: '))  # Lê a largura
+altura = float(input('Digite a altura do retângulo: '))      # Lê a altura
 
 area = largura * altura  # Calcula a área
-print(f"A área do retângulo é: {area}")  # Exibe a área
+print(f'A área do retângulo é: {area}')  # Exibe a área
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -208,8 +208,8 @@ graph TD
   A[Início] --> B[Pedir um número]
   B --> C[Calcular número % 2]
   C --> D{Resto == 0?}
-  D -->|Sim| E[Exibir "par"]
-  D -->|Não| F[Exibir "ímpar"]
+  D -->|Sim| E[Exibir 'par']
+  D -->|Não| F[Exibir 'ímpar']
   E --> G[Fim]
   F --> G
 ```
@@ -219,12 +219,12 @@ graph TD
 # Exercício 5: Verificação de Paridade
 # Determina se um número é par ou ímpar com base no resto da divisão por 2
 
-numero = int(input("Digite um número: "))  # Lê o número do usuário
+numero = int(input('Digite um número: '))  # Lê o número do usuário
 
 if numero % 2 == 0:
-    print(f"{numero} é um número par")
+    print(f'{numero} é um número par')
 else:
-    print(f"{numero} é um número ímpar")
+    print(f'{numero} é um número ímpar')
 ```
 
 ### 5. Exemplo de Saída
@@ -253,8 +253,8 @@ graph TD
   A[Início] --> B[Pedir três notas]
   B --> C[Calcular média = (nota1+nota2+nota3)/3]
   C --> D{Média >= 7?}
-  D -->|Sim| E[Exibir "Aluno aprovado"]
-  D -->|Não| F[Exibir "Aluno reprovado"]
+  D -->|Sim| E[Exibir 'Aluno aprovado']
+  D -->|Não| F[Exibir 'Aluno reprovado']
   E --> G[Fim]
   F --> G
 ```
@@ -264,16 +264,16 @@ graph TD
 # Exercício 6: Calculadora de Notas
 # Calcula a média de três notas e verifica se o aluno foi aprovado (média >= 7)
 
-nota1 = float(input("Digite a primeira nota: "))
-nota2 = float(input("Digite a segunda nota: "))
-nota3 = float(input("Digite a terceira nota: "))
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+nota3 = float(input('Digite a terceira nota: '))
 
 media = (nota1 + nota2 + nota3) / 3  # Calcula a média
 
 if media >= 7:
-    print(f"Aluno aprovado com média {media:.2f}")
+    print(f'Aluno aprovado com média {media:.2f}')
 else:
-    print(f"Aluno reprovado com média {media:.2f}")
+    print(f'Aluno reprovado com média {media:.2f}')
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -356,13 +356,13 @@ graph TD
 # Exercício 8: Soma de Números
 # Soma todos os números de 1 até N fornecido pelo usuário
 
-N = int(input("Digite um número N: "))
+N = int(input('Digite um número N: '))
 soma = 0
 
 for i in range(1, N + 1):
     soma += i
 
-print(f"A soma dos números de 1 a {N} é: {soma}")
+print(f'A soma dos números de 1 a {N} é: {soma}')
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -403,11 +403,11 @@ graph TD
 # Calcula o fatorial de um número fornecido pelo usuário
 
 def fatorial():
-    numero = int(input("Digite um número: "))
+    numero = int(input('Digite um número: '))
     fatorial = 1
     for i in range(1, numero + 1):
         fatorial *= i
-    print(f"O fatorial de {numero} é: {fatorial}")
+    print(f'O fatorial de {numero} é: {fatorial}')
 
 fatorial()  # Executa a função
 ```
@@ -440,8 +440,8 @@ graph TD
   B --> C[Processar: remover espaços e converter para minúsculas]
   C --> D[Inverter a string]
   D --> E{Comparar: original == invertida?}
-  E -->|Sim| F[Exibir "é palíndromo"]
-  E -->|Não| G[Exibir "não é palíndromo"]
+  E -->|Sim| F[Exibir 'é palíndromo']
+  E -->|Não| G[Exibir 'não é palíndromo']
   F --> H[Fim da Função]
   G --> H
 ```
@@ -452,20 +452,20 @@ graph TD
 # Determina se uma palavra ou frase é um palíndromo
 
 def eh_palindromo():
-    texto = input("Digite uma palavra ou frase: ")
+    texto = input('Digite uma palavra ou frase: ')
     texto_processado = ''.join(char for char in texto if char.isalnum()).lower()
     texto_invertido = texto_processado[::-1]
     if texto_processado == texto_invertido:
-        print(f'"{texto}" é um palíndromo')
+        print(f''{texto}' é um palíndromo')
     else:
-        print(f'"{texto}" não é um palíndromo')
+        print(f''{texto}' não é um palíndromo')
 
 eh_palindromo()
 ```
 
 ### 5. Exemplo de Entrada/Saída
 - **Entrada**: Ame a ema  
-- **Saída**: "Ame a ema" é um palíndromo
+- **Saída**: 'Ame a ema' é um palíndromo
 
 ---
 
@@ -497,10 +497,10 @@ graph TD
 # Exercício 11: Média de uma Lista
 # Calcula a média dos números inseridos pelo usuário
 
-entrada = input("Digite uma lista de números separados por espaço: ")
+entrada = input('Digite uma lista de números separados por espaço: ')
 numeros = [float(num) for num in entrada.split()]
 media = sum(numeros) / len(numeros)
-print(f"A média dos números é: {media}")
+print(f'A média dos números é: {media}')
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -537,10 +537,10 @@ graph TD
 # Exercício 12: Ordenação de Lista
 # Ordena uma lista de números em ordem crescente
 
-entrada = input("Digite uma lista de números separados por espaço: ")
+entrada = input('Digite uma lista de números separados por espaço: ')
 numeros = [float(num) for num in entrada.split()]
 numeros.sort()
-print(f"Lista ordenada: {numeros}")
+print(f'Lista ordenada: {numeros}')
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -577,7 +577,7 @@ graph TD
 # Exercício 13: Contagem de Palavras
 # Conta quantas vezes cada palavra aparece na frase
 
-frase = input("Digite uma frase: ")
+frase = input('Digite uma frase: ')
 palavras = frase.split()
 contagem = {}
 
@@ -587,11 +587,11 @@ for palavra in palavras:
     else:
         contagem[palavra] = 1
 
-print("Contagem de palavras:", contagem)
+print('Contagem de palavras:', contagem)
 ```
 
 ### 5. Exemplo de Entrada/Saída
-- **Entrada**: "isto é um teste e isto é simples"  
+- **Entrada**: 'isto é um teste e isto é simples'  
 - **Saída**: Contagem de palavras: {'isto': 2, 'é': 2, 'um': 1, 'teste': 1, 'e': 1, 'simples': 1}
 
 ---
@@ -627,17 +627,17 @@ graph TD
 # Exercício 14: Conjuntos de Números
 # Calcula a união e a interseção de dois conjuntos fornecidos pelo usuário
 
-entrada1 = input("Digite o primeiro conjunto de números separados por espaço: ")
+entrada1 = input('Digite o primeiro conjunto de números separados por espaço: ')
 conjunto1 = set(map(int, entrada1.split()))
 
-entrada2 = input("Digite o segundo conjunto de números separados por espaço: ")
+entrada2 = input('Digite o segundo conjunto de números separados por espaço: ')
 conjunto2 = set(map(int, entrada2.split()))
 
 uniao = conjunto1.union(conjunto2)
 intersecao = conjunto1.intersection(conjunto2)
 
-print(f"União: {uniao}")
-print(f"Interseção: {intersecao}")
+print(f'União: {uniao}')
+print(f'Interseção: {intersecao}')
 ```
 
 ### 5. Exemplo de Entrada/Saída
@@ -678,17 +678,17 @@ graph TD
 # Exercício 15: Leitura de Arquivos
 # Lê e exibe o conteúdo de um arquivo de texto informado pelo usuário
 
-nome_arquivo = input("Digite o nome do arquivo a ser lido: ")
+nome_arquivo = input('Digite o nome do arquivo a ser lido: ')
 
 with open(nome_arquivo, 'r', encoding='utf-8') as arquivo:
     conteudo = arquivo.read()
 
-print("Conteúdo do arquivo:")
+print('Conteúdo do arquivo:')
 print(conteudo)
 ```
 
 ### 5. Exemplo de Entrada/Saída
-- **Entrada**: Arquivo "exemplo.txt" contendo "Olá, Python!"  
+- **Entrada**: Arquivo 'exemplo.txt' contendo 'Olá, Python!'  
 - **Saída**:  
   Conteúdo do arquivo:  
   Olá, Python!
@@ -725,19 +725,19 @@ graph TD
 # Exercício 16: Escrita de Arquivos
 # Solicita um texto e salva-o em um arquivo
 
-texto_para_salvar = input("Digite o texto a ser salvo no arquivo: ")
-nome_arquivo = input("Digite o nome do arquivo para salvar (ex: resultado.txt): ")
+texto_para_salvar = input('Digite o texto a ser salvo no arquivo: ')
+nome_arquivo = input('Digite o nome do arquivo para salvar (ex: resultado.txt): ')
 
 with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
     arquivo.write(texto_para_salvar)
 
-print(f"O arquivo '{nome_arquivo}' foi salvo com sucesso!")
+print(f'O arquivo '{nome_arquivo}' foi salvo com sucesso!')
 ```
 
 ### 5. Exemplo de Entrada/Saída
 - **Entrada**:  
-  Texto: "Aprendendo Python é divertido!"  
-  Nome do arquivo: "minha_frase.txt"  
+  Texto: 'Aprendendo Python é divertido!'  
+  Nome do arquivo: 'minha_frase.txt'  
 - **Saída**:  
   O arquivo 'minha_frase.txt' foi salvo com sucesso!
 
